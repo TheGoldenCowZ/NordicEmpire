@@ -203,8 +203,8 @@
               <div><dt>Capital</dt><dd>Heimstad</dd></div>
               <div><dt>Residential</dt><dd>Stavanger</dd></div>
               <div><dt>Motto</dt><dd>Built together. Bound together. Strong together.</dd></div>
-              <div><dt>Leader</dt><dd>TheGoldenCowZ</dd></div>
-              <div><dt>Co-leader</dt><dd>Jfizzle9000</dd></div>
+              <div><dt>Leader</dt><dd><span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span></dd></div>
+              <div><dt>Co-leader</dt><dd><span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span></dd></div>
               <div><dt>Established church</dt><dd>Church of the Nordic Empire (Protestant)</dd></div>
               <div><dt>Server</dt><dd><a href="https://diplomaticamc.com/" target="_blank" rel="noopener noreferrer">DiplomaticaMC</a> · <code>diplomaticamc.com</code></dd></div>
             </dl>
@@ -213,21 +213,21 @@
           <div class="info-block">
             <h2>Leadership &amp; residents</h2>
             <ul class="roster-list">
-              <li>
-                <strong>TheGoldenCowZ</strong>
-                <span>Leader · King of the Nordic Empire</span>
+              <li class="roster-player">
+                <img class="player-head" src="assets/players/thegoldencowz.png" alt="TheGoldenCowZ's Minecraft skin" width="48" height="48" loading="lazy">
+                <span class="roster-player-copy"><strong>TheGoldenCowZ</strong><span>Leader · King of the Nordic Empire</span></span>
               </li>
-              <li>
-                <strong>Jfizzle9000</strong>
-                <span>Co-leader · Mayor of Stavanger</span>
+              <li class="roster-player">
+                <img class="player-head" src="assets/players/jfizzle9000.png" alt="Jfizzle9000's Minecraft skin" width="48" height="48" loading="lazy">
+                <span class="roster-player-copy"><strong>Jfizzle9000</strong><span>Co-leader · Mayor of Stavanger</span></span>
               </li>
-              <li>
-                <strong>Gisa1327</strong>
-                <span>Founder</span>
+              <li class="roster-player">
+                <img class="player-head" src="assets/players/gisa1327.png" alt="Gisa1327's Minecraft skin" width="48" height="48" loading="lazy">
+                <span class="roster-player-copy"><strong>Gisa1327</strong><span>Founder</span></span>
               </li>
-              <li>
-                <strong>Zaksmak8113</strong>
-                <span>Founder</span>
+              <li class="roster-player">
+                <img class="player-head" src="assets/players/zaksmak8113.png" alt="Zaksmak8113's Minecraft skin" width="48" height="48" loading="lazy">
+                <span class="roster-player-copy"><strong>Zaksmak8113</strong><span>Founder</span></span>
               </li>
             </ul>
           </div>
@@ -307,12 +307,12 @@
           <li>
             <p class="history-date">1 June 2026</p>
             <h2>Stavanger opens</h2>
-            <p>The residential town launched. Residents join with <code>/t join Stavanger</code>. Jfizzle9000 serves as mayor.</p>
+            <p>The residential town launched. Residents join with <code>/t join Stavanger</code>. <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span> serves as mayor.</p>
           </li>
           <li>
             <p class="history-date">Founding</p>
             <h2>The four founders</h2>
-            <p>The Nordic Empire was founded by <strong>TheGoldenCowZ</strong>, <strong>Jfizzle9000</strong>, <strong>Gisa1327</strong>, and <strong>Zaksmak8113</strong>. About 25% of the founding funding came from Gisa1327; the rest came from TheGoldenCowZ.</p>
+            <p>The Nordic Empire was founded by <strong class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></strong>, <strong class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></strong>, <strong class="player-ref"><img class="player-head" src="assets/players/gisa1327.png" alt="" width="22" height="22"><span>Gisa1327</span></strong>, and <strong class="player-ref"><img class="player-head" src="assets/players/zaksmak8113.png" alt="" width="22" height="22"><span>Zaksmak8113</span></strong>. About 25% of the founding funding came from <span class="player-ref"><img class="player-head" src="assets/players/gisa1327.png" alt="" width="22" height="22"><span>Gisa1327</span></span>; the rest came from <span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span>.</p>
           </li>
         </ol>
       </div>
@@ -429,7 +429,7 @@
 
           <section class="constitution-article" id="art-18">
             <h3><span class="art-num">Article 18.</span> Entry into force</h3>
-            <p>This Constitution enters into force on 28 July 2026, as ratified by TheGoldenCowZ, King of the Nordic Empire.</p>
+            <p>This Constitution enters into force on 28 July 2026, as ratified by <span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span>, King of the Nordic Empire.</p>
           </section>
 
           <p class="constitution-closing">Given at Heimstad, 28 July 2026.</p>
@@ -462,22 +462,146 @@
           </div>
         </div>
 
-        <article class="town-feature">
-          <p class="kicker">Capital</p>
-          <h2>Heimstad</h2>
-          <p>The capital of the Nordic Empire on DiplomaticaMC.</p>
-          <p class="muted">Status: Active</p>
+        <div id="towns-index">
+          <div class="town-card-grid">
+            <a class="town-card" href="#towns/heimstad">
+              <span class="kicker">Capital</span>
+              <h2>Heimstad</h2>
+              <p>The capital of the Nordic Empire on DiplomaticaMC.</p>
+              <span class="town-card-status">Active</span>
+              <span class="btn btn-outline town-card-button">Show what Heimstad has to offer</span>
+            </a>
+            <a class="town-card" href="#towns/stavanger">
+              <span class="kicker">Residential</span>
+              <h2>Stavanger</h2>
+              <p>The main place to live. Join, get a plot, and meet your neighbours.</p>
+              <span class="town-card-status">Active · Open to join</span>
+              <span class="btn btn-outline town-card-button">Show what Stavanger has to offer</span>
+            </a>
+            <a class="town-card" href="#towns/akerby">
+              <span class="kicker">Planned farm town</span>
+              <h2>Åkerby</h2>
+              <p>The Nordic Empire’s planned agricultural town.</p>
+              <span class="town-card-status">Planned</span>
+              <span class="btn btn-outline town-card-button">Show what Åkerby has to offer</span>
+            </a>
+          </div>
+        </div>
+
+        <article class="town-detail" data-town="heimstad" hidden>
+          <p class="town-back"><a href="#towns">← All towns</a></p>
+          <header class="section-header town-detail-header">
+            <p class="kicker">Capital</p>
+            <h1 class="section-title">Heimstad</h1>
+            <p class="section-intro">Heimstad is the political heart of the realm and the seat of the Nordic Empire.</p>
+            <p class="town-meta">Status: Active</p>
+            <div class="town-mayor">
+              <img class="player-head" src="assets/players/thegoldencowz.png" alt="TheGoldenCowZ's Minecraft skin" width="52" height="52">
+              <span class="town-mayor-copy"><span>Mayor</span><strong>TheGoldenCowZ</strong></span>
+            </div>
+          </header>
+          <section class="town-detail-section">
+            <h2>What Heimstad has to offer</h2>
+            <ul class="town-offerings">
+              <li>The capital and seat of government</li>
+              <li>Public halls and national institutions</li>
+              <li>A central place for ceremonies and visitors</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>History and growth</h2>
+            <ul class="town-history">
+              <li>Heimstad was confirmed as the capital of the Nordic Empire on 21 June 2026.</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>Buildings and landmarks</h2>
+            <div class="town-landmarks">
+              <article class="town-landmark"><h3>National halls</h3><p>The public buildings at the centre of the Nordic Empire.</p></article>
+            </div>
+          </section>
+          <section class="town-detail-section">
+            <h2>Town gallery</h2>
+            <div class="town-gallery">
+              <figure class="town-image"><div class="town-image-placeholder" role="img" aria-label="A view of Heimstad"><span class="town-image-icon">◇</span><strong>Town image</strong><span>Add a screenshot of Heimstad here.</span></div></figure>
+            </div>
+          </section>
         </article>
 
-        <article class="town-feature">
-          <p class="kicker">Residential</p>
-          <h2>Stavanger</h2>
-          <p>The main place to live. Open town: settle in-game with <code>/t join Stavanger</code>, get a plot, and meet neighbours.</p>
-          <p class="muted">Mayor: Jfizzle9000 · Status: Active · Open to join</p>
+        <article class="town-detail" data-town="stavanger" hidden>
+          <p class="town-back"><a href="#towns">← All towns</a></p>
+          <header class="section-header town-detail-header">
+            <p class="kicker">Residential</p>
+            <h1 class="section-title">Stavanger</h1>
+            <p class="section-intro">Stavanger is the residential heart of the Nordic Empire: an open town built for homes, community projects, and new residents.</p>
+            <p class="town-meta">Status: Active · Open to join</p>
+            <div class="town-mayor">
+              <img class="player-head" src="assets/players/jfizzle9000.png" alt="Jfizzle9000's Minecraft skin" width="52" height="52">
+              <span class="town-mayor-copy"><span>Mayor</span><strong>Jfizzle9000</strong></span>
+            </div>
+            <div class="town-join"><strong>Ready to settle here?</strong><span>Join in-game with </span><code>/t join Stavanger</code></div>
+          </header>
+          <section class="town-detail-section">
+            <h2>What Stavanger has to offer</h2>
+            <ul class="town-offerings">
+              <li>Open residential plots for new players</li>
+              <li>An underground shopping mall</li>
+              <li>Community builds and public paths</li>
+              <li>The cathedral project</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>History and growth</h2>
+            <ul class="town-history">
+              <li>Stavanger opened its gates on 1 June 2026 as the nation’s principal residential town.</li>
+              <li>Stavanger has grown to more than 300 claimed chunks.</li>
+              <li><span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span> has already contributed massive amounts of gold to the town’s growth and public projects.</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>Buildings and landmarks</h2>
+            <div class="town-landmarks">
+              <article class="town-landmark"><h3>The cathedral project</h3><p>A huge cathedral planned as one of Stavanger’s defining public builds and a home for the Church of the Nordic Empire.</p></article>
+              <article class="town-landmark"><h3>Underground shopping mall</h3><p>A shopping area beneath Stavanger where residents and visitors can explore the town’s stores.</p></article>
+              <article class="town-landmark"><h3>Residential quarter</h3><p>Plots, paths, and shared spaces where most residents make their home.</p></article>
+            </div>
+          </section>
+          <section class="town-detail-section">
+            <h2>Town gallery</h2>
+            <div class="town-gallery">
+              <figure class="town-image"><div class="town-image-placeholder" role="img" aria-label="A view across Stavanger"><span class="town-image-icon">◇</span><strong>Town image</strong><span>Add a town overview screenshot here.</span></div></figure>
+              <figure class="town-image"><div class="town-image-placeholder" role="img" aria-label="Stavanger cathedral project"><span class="town-image-icon">◇</span><strong>Town image</strong><span>Add a screenshot of the cathedral project here.</span></div></figure>
+            </div>
+          </section>
         </article>
 
-        <h2 class="subhead">Planned</h2>
-        <p>Åkerby will be the Nordic Empire’s first farm town.</p>
+        <article class="town-detail" data-town="akerby" hidden>
+          <p class="town-back"><a href="#towns">← All towns</a></p>
+          <header class="section-header town-detail-header">
+            <p class="kicker">Planned farm town</p>
+            <h1 class="section-title">Åkerby</h1>
+            <p class="section-intro">Åkerby is planned as the realm’s first dedicated farm town.</p>
+            <p class="town-meta">Status: Planned · Mayor: Not yet appointed</p>
+          </header>
+          <section class="town-detail-section">
+            <h2>What Åkerby has to offer</h2>
+            <ul class="town-offerings">
+              <li>Fields and food production</li>
+              <li>FarmCo supply links</li>
+              <li>Agricultural building projects</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>History and growth</h2>
+            <ul class="town-history"><li>Åkerby is currently in the planning stage.</li></ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>Town gallery</h2>
+            <div class="town-gallery">
+              <figure class="town-image"><div class="town-image-placeholder" role="img" aria-label="The future site of Åkerby"><span class="town-image-icon">◇</span><strong>Town image</strong><span>Add a planning image or future town screenshot here.</span></div></figure>
+            </div>
+          </section>
+        </article>
       </div>
     </section>
 
@@ -497,7 +621,7 @@
               <p class="paper-kicker">Nation</p>
               <h2>The Nordic Empire is founded</h2>
               <p class="paper-deck">Four founders raise a realm on DiplomaticaMC. With the Constitution ratified, the Nordic Empire stands as one people under one law.</p>
-              <p class="paper-lead-body">Heimstad is the capital. Stavanger is home. TheGoldenCowZ reigns as King; Jfizzle9000, Gisa1327, and Zaksmak8113 stand with him among the founders. The Constitution settles the form of government, the Protestant faith of the realm, and the Church of the Nordic Empire as Established Church. Built together. Bound together. Strong together.</p>
+              <p class="paper-lead-body">Heimstad is the capital. Stavanger is home. <span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span> reigns as King; <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span>, <span class="player-ref"><img class="player-head" src="assets/players/gisa1327.png" alt="" width="22" height="22"><span>Gisa1327</span></span>, and <span class="player-ref"><img class="player-head" src="assets/players/zaksmak8113.png" alt="" width="22" height="22"><span>Zaksmak8113</span></span> stand with him among the founders. The Constitution settles the form of government, the Protestant faith of the realm, and the Church of the Nordic Empire as Established Church. Built together. Bound together. Strong together.</p>
               <p class="paper-continue">Continue reading</p>
             </a>
 
@@ -510,12 +634,12 @@
               <a class="paper-story" href="#times/heimstad-capital" data-route="times/heimstad-capital">
                 <p class="paper-kicker">Nation</p>
                 <h3>Heimstad named capital</h3>
-                <p>TheGoldenCowZ confirms Heimstad as the capital. Stavanger remains home for most residents.</p>
+                <p><span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span> confirms Heimstad as the capital. Stavanger remains home for most residents.</p>
               </a>
               <a class="paper-story" href="#times/stavanger-launch" data-route="times/stavanger-launch">
                 <p class="paper-kicker">Nation</p>
                 <h3>Stavanger opened 1 June</h3>
-                <p>The residential town launched. Join with <code>/t join Stavanger</code>. Mayor: Jfizzle9000.</p>
+                <p>The residential town launched. Join with <code>/t join Stavanger</code>. Mayor: <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span>.</p>
               </a>
             </div>
           </div>
@@ -567,7 +691,7 @@
           <div class="times-body">
             <p>STAVANGER. On 1 June 2026 the Nordic Empire opened its residential town. Stavanger is the place to live: plots, neighbours, and a clear path in for anyone who joins DiplomaticaMC.</p>
             <p>Residents connect with IP <code>diplomaticamc.com</code>, then run <code>/t join Stavanger</code> in chat. No application is required. Heimstad stands as the capital; Stavanger is home.</p>
-            <p>Co-leader Jfizzle9000 serves as mayor of Stavanger. Since opening day the town has grown into the nation’s residential heart, with FarmCo now selling the realm’s farm goods from the same people who work the land.</p>
+            <p>Co-leader <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span> serves as mayor of Stavanger. Since opening day, the town has grown beyond 300 claimed chunks and added an underground shopping mall for residents and visitors.</p>
           </div>
         </article>
 
@@ -577,7 +701,7 @@
           <h1>Heimstad named capital of the Nordic Empire</h1>
           <p class="times-byline">By the Nordic Times editorial desk</p>
           <div class="times-body">
-            <p>HEIMSTAD. TheGoldenCowZ and fellow residents confirm Heimstad as the capital of the Nordic Empire on DiplomaticaMC. Stavanger remains the main residential town, open since 1 June.</p>
+            <p>HEIMSTAD. <span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span> and fellow residents confirm Heimstad as the capital of the Nordic Empire on DiplomaticaMC. Stavanger remains the main residential town, open since 1 June.</p>
             <p>Next on the horizon is Åkerby, the Nordic Empire’s first farm town, tied to FarmCo as the selling side of its harvest. Diplomacy with border towns will follow as the map allows.</p>
           </div>
         </article>
@@ -588,7 +712,7 @@
           <h1>The Nordic Empire is founded</h1>
           <p class="times-byline">By the Nordic Times editorial desk</p>
           <div class="times-body">
-            <p>HEIMSTAD. The nation of the Nordic Empire has been founded on DiplomaticaMC. Four founders raised the realm: <strong>TheGoldenCowZ</strong>, King of the Nordic Empire; <strong>Jfizzle9000</strong>, co-leader and mayor of Stavanger; and fellow founders <strong>Gisa1327</strong> and <strong>Zaksmak8113</strong>.</p>
+            <p>HEIMSTAD. The nation of the Nordic Empire has been founded on DiplomaticaMC. Four founders raised the realm: <strong class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></strong>, King of the Nordic Empire; <strong class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></strong>, co-leader and mayor of Stavanger; and fellow founders <strong class="player-ref"><img class="player-head" src="assets/players/gisa1327.png" alt="" width="22" height="22"><span>Gisa1327</span></strong> and <strong class="player-ref"><img class="player-head" src="assets/players/zaksmak8113.png" alt="" width="22" height="22"><span>Zaksmak8113</span></strong>.</p>
             <p>With the Constitution ratified on this day, the Nordic Empire stands under one supreme law: a limited monarchy, Protestant faith of the King, and the Church of the Nordic Empire as the sole Established Church. Protestantism is the religion of the realm. Heimstad is the capital; Stavanger is home for most residents.</p>
             <p>The early work turns inward: raise the towns, steady the state, and bind residents to one another before the map pulls the gaze outward. Residents may read the full text on the <a href="#constitution" data-tab="constitution">Constitution</a> page.</p>
             <p>Built together. Bound together. Strong together.</p>
@@ -679,7 +803,7 @@
           </details>
           <details class="faq-item">
             <summary>Who leads the Nordic Empire?</summary>
-            <p><a href="#about" data-tab="about">TheGoldenCowZ</a> leads the Nordic Empire with <a href="#about" data-tab="about">Jfizzle9000</a> as co-leader and mayor of Stavanger.</p>
+            <p><a class="player-ref" href="#about" data-tab="about"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></a> leads the Nordic Empire with <a class="player-ref" href="#about" data-tab="about"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></a> as co-leader and mayor of Stavanger.</p>
           </details>
           <details class="faq-item">
             <summary>Who founded the Nordic Empire?</summary>
@@ -710,6 +834,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
