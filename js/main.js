@@ -9,6 +9,8 @@
   const yearEl = document.getElementById("year");
   const timesIndex = document.getElementById("times-index");
   const timesStories = Array.from(document.querySelectorAll(".times-story"));
+  const townsIndex = document.getElementById("towns-index");
+  const townDetails = Array.from(document.querySelectorAll("[data-town]"));
 
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
@@ -17,7 +19,8 @@
     const parts = raw.split("/").filter(Boolean);
     const tab = parts[0] || "home";
     const story = tab === "times" ? parts[1] || null : null;
-    return { tab: document.getElementById(tab) ? tab : "home", story };
+    const town = tab === "towns" ? parts[1] || null : null;
+    return { tab: document.getElementById(tab) ? tab : "home", story, town };
   }
 
   function showTimesStory(storyId) {
@@ -29,7 +32,16 @@
     });
   }
 
-  function showTab(tab, story) {
+  function showTown(townSlug) {
+    if (!townsIndex) return;
+    const matchingTown = townDetails.find((item) => item.getAttribute("data-town") === townSlug);
+    townsIndex.hidden = Boolean(matchingTown);
+    townDetails.forEach((item) => {
+      item.hidden = item !== matchingTown;
+    });
+  }
+
+  function showTab(tab, story, town) {
     panels.forEach((panel) => {
       const active = panel.id === tab;
       panel.classList.toggle("active", active);
@@ -43,6 +55,8 @@
 
     if (tab === "times") showTimesStory(story || null);
     else showTimesStory(null);
+    if (tab === "towns") showTown(town || null);
+    else showTown(null);
 
     if (mainNav) mainNav.classList.remove("is-open");
     if (navToggle) navToggle.setAttribute("aria-expanded", "false");
@@ -51,8 +65,8 @@
   }
 
   function applyRoute() {
-    const { tab, story } = parseHash();
-    showTab(tab, story);
+    const { tab, story, town } = parseHash();
+    showTab(tab, story, town);
   }
 
   function go(route) {

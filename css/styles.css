@@ -839,6 +839,48 @@ main {
   gap: 2px;
 }
 
+.roster-list .roster-player {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.player-head {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  image-rendering: pixelated;
+  background: var(--nordic-blue-soft);
+  box-shadow: var(--shadow-sm);
+}
+
+.player-head--unavailable {
+  opacity: 0.25;
+}
+
+.player-ref {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  vertical-align: -0.22em;
+  white-space: nowrap;
+}
+
+.player-ref .player-head {
+  width: 1.35em;
+  height: 1.35em;
+  flex-basis: 1.35em;
+  border-radius: 3px;
+}
+
+.roster-player-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .roster-list strong {
   color: var(--nordic-blue);
 }
@@ -959,6 +1001,253 @@ main {
 }
 
 /* Towns */
+.content-loading,
+.content-error {
+  color: var(--muted);
+}
+
+.content-error {
+  color: var(--nordic-red-dark);
+}
+
+.town-card-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.town-card {
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: inherit;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease), border-color var(--duration) var(--ease);
+}
+
+.town-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  color: inherit;
+  box-shadow: var(--shadow);
+}
+
+.town-card h2 {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--nordic-blue);
+}
+
+.town-card p {
+  margin: 0 0 18px;
+  color: var(--ink-soft);
+}
+
+.town-card-status {
+  margin-top: auto;
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+.town-card-button {
+  margin-top: 18px;
+}
+
+.town-detail {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.town-back {
+  margin: 0 0 24px;
+}
+
+.town-back a {
+  color: var(--nordic-blue);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.town-detail-header {
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.town-meta {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.town-mayor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.town-mayor .player-head {
+  width: 52px;
+  height: 52px;
+  flex-basis: 52px;
+}
+
+.town-mayor-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+}
+
+.town-mayor-copy span {
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.town-mayor-copy strong {
+  color: var(--nordic-blue);
+}
+
+.town-join {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px;
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-left: 3px solid var(--nordic-red);
+  background: var(--nordic-red-soft);
+}
+
+.town-join strong {
+  width: 100%;
+  color: var(--nordic-blue);
+}
+
+.town-join code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+
+.town-detail-section {
+  margin: 36px 0 0;
+}
+
+.town-detail-section > h2 {
+  margin: 0 0 18px;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: var(--nordic-blue);
+}
+
+.town-offerings,
+.town-history {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--ink-soft);
+}
+
+.town-offerings {
+  display: grid;
+  gap: 10px 24px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.town-offerings li::marker,
+.town-history li::marker {
+  color: var(--nordic-red);
+}
+
+.town-history {
+  display: grid;
+  gap: 12px;
+  max-width: 45rem;
+}
+
+.town-landmarks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.town-landmark {
+  padding-top: 14px;
+  border-top: 2px solid var(--nordic-red);
+}
+
+.town-landmark h3 {
+  margin: 0 0 6px;
+  color: var(--nordic-blue);
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.town-landmark p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+.town-gallery {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.town-image {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.town-image img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.town-image-placeholder {
+  display: grid;
+  min-height: 220px;
+  place-content: center;
+  gap: 4px;
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+  background:
+    linear-gradient(135deg, rgba(0, 32, 91, 0.04), rgba(186, 12, 47, 0.05)),
+    var(--nordic-blue-soft);
+}
+
+.town-image-placeholder strong {
+  color: var(--nordic-blue);
+}
+
+.town-image-icon {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--nordic-red);
+}
+
+.town-image figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
 .town-feature {
   margin-bottom: 36px;
   padding-bottom: 28px;
