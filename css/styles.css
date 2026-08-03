@@ -1018,10 +1018,10 @@ main {
 
 .town-card {
   display: flex;
-  min-height: 300px;
+  min-height: 0;
   flex-direction: column;
   align-items: flex-start;
-  padding: 24px;
+  padding: 20px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   color: inherit;
@@ -1047,18 +1047,12 @@ main {
 }
 
 .town-card p {
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   color: var(--ink-soft);
 }
 
-.town-card-status {
-  margin-top: auto;
-  font-size: var(--text-sm);
-  color: var(--muted);
-}
-
 .town-card-button {
-  margin-top: 18px;
+  margin-top: auto;
 }
 
 .town-detail {
@@ -1066,8 +1060,13 @@ main {
   margin: 0 auto;
 }
 
+#towns .page-wrap {
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
 .town-back {
-  margin: 0 0 24px;
+  margin: 0 0 10px;
 }
 
 .town-back a {
@@ -1078,12 +1077,22 @@ main {
 }
 
 .town-detail-header {
-  padding-bottom: 28px;
-  border-bottom: 1px solid var(--border);
+  margin-bottom: 14px;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.town-detail-header .section-title {
+  margin-bottom: 6px;
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+}
+
+.town-detail-header .section-intro {
+  font-size: var(--text-base);
 }
 
 .town-meta {
-  margin: 16px 0 0;
+  margin: 8px 0 0;
   color: var(--muted);
   font-size: var(--text-sm);
 }
@@ -1091,20 +1100,20 @@ main {
 .town-mayor {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 18px;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .town-mayor .player-head {
-  width: 52px;
-  height: 52px;
-  flex-basis: 52px;
+  width: 40px;
+  height: 40px;
+  flex-basis: 40px;
 }
 
 .town-mayor-copy {
   display: flex;
   flex-direction: column;
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 .town-mayor-copy span {
@@ -1121,8 +1130,8 @@ main {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 4px;
-  margin-top: 20px;
-  padding: 14px 16px;
+  margin-top: 12px;
+  padding: 10px 12px;
   border-left: 3px solid var(--nordic-red);
   background: var(--nordic-red-soft);
 }
@@ -1138,15 +1147,27 @@ main {
 }
 
 .town-detail-section {
-  margin: 36px 0 0;
+  margin: 28px 0 0;
+}
+
+.town-detail-section:first-of-type {
+  margin-top: 0;
 }
 
 .town-detail-section > h2 {
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   font-family: var(--font-display);
-  font-size: 1.65rem;
+  font-size: 1.45rem;
   font-weight: 400;
   color: var(--nordic-blue);
+}
+
+.town-detail-section:first-of-type > h2 {
+  margin-bottom: 8px;
+}
+
+.town-detail .map-frame {
+  height: min(48vh, 420px);
 }
 
 .town-offerings,
@@ -1269,9 +1290,9 @@ main {
 }
 
 .towns-map {
-  margin-top: 48px;
-  padding-top: 28px;
-  border-top: 1px solid var(--border);
+  margin-top: 24px;
+  padding-top: 0;
+  border-top: none;
 }
 
 .towns-map--first {
@@ -1284,11 +1305,15 @@ main {
 }
 
 .towns-map .subhead {
-  margin-top: 0;
+  margin: 0 0 10px;
 }
 
 .towns-map .section-intro {
   margin-bottom: 18px;
+}
+
+.towns-map .map-frame {
+  height: min(48vh, 440px);
 }
 
 .town-grid {

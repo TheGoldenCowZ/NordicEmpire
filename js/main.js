@@ -10,6 +10,7 @@
   const timesIndex = document.getElementById("times-index");
   const timesStories = Array.from(document.querySelectorAll(".times-story"));
   const townsIndex = document.getElementById("towns-index");
+  const townsMap = document.querySelector(".towns-map");
   const townDetails = Array.from(document.querySelectorAll("[data-town]"));
 
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
@@ -36,6 +37,7 @@
     if (!townsIndex) return;
     const matchingTown = townDetails.find((item) => item.getAttribute("data-town") === townSlug);
     townsIndex.hidden = Boolean(matchingTown);
+    if (townsMap) townsMap.hidden = Boolean(matchingTown);
     townDetails.forEach((item) => {
       item.hidden = item !== matchingTown;
     });

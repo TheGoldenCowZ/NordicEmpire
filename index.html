@@ -180,7 +180,7 @@
             <li><a href="#about" data-tab="about"><strong>About</strong><span>Who we are, towns at a glance, and how the nation works.</span></a></li>
             <li><a href="#history" data-tab="history"><strong>History</strong><span>Founding, milestones, and the nation record.</span></a></li>
             <li><a href="#constitution" data-tab="constitution"><strong>Constitution</strong><span>Supreme law of the realm: form of government and faith.</span></a></li>
-            <li><a href="#towns" data-tab="towns"><strong>Towns</strong><span>Heimstad, Stavanger, and Åkerby planned next.</span></a></li>
+            <li><a href="#towns" data-tab="towns"><strong>Towns</strong><span>Heimstad, Stavanger, and Nordic_island.</span></a></li>
           </ul>
         </div>
       </div>
@@ -202,6 +202,7 @@
               <div><dt>Nation</dt><dd>Nordic Empire</dd></div>
               <div><dt>Capital</dt><dd>Heimstad</dd></div>
               <div><dt>Residential</dt><dd>Stavanger</dd></div>
+              <div><dt>Industrial</dt><dd>Nordic_island</dd></div>
               <div><dt>Motto</dt><dd>Built together. Bound together. Strong together.</dd></div>
               <div><dt>Leader</dt><dd><span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span></dd></div>
               <div><dt>Co-leader</dt><dd><span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span></dd></div>
@@ -228,6 +229,10 @@
               <li class="roster-player">
                 <img class="player-head" src="assets/players/zaksmak8113.png" alt="Zaksmak8113's Minecraft skin" width="48" height="48" loading="lazy">
                 <span class="roster-player-copy"><strong>Zaksmak8113</strong><span>Founder</span></span>
+              </li>
+              <li class="roster-player">
+                <img class="player-head" src="assets/players/theospelarx.png" alt="theospelarx's Minecraft skin" width="48" height="48" loading="lazy">
+                <span class="roster-player-copy"><strong>theospelarx</strong><span>Mayor of Nordic_island</span></span>
               </li>
             </ul>
           </div>
@@ -289,6 +294,11 @@
         </header>
 
         <ol class="history-timeline">
+          <li>
+            <p class="history-date">3 August 2026</p>
+            <h2>Nordic_island founded</h2>
+            <p>Nordic_island rises as the industrial town focused on technologies to gather resources. Mayor: <span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span>. The town’s founding was subsidized by the nation fund.</p>
+          </li>
           <li>
             <p class="history-date">28 July 2026</p>
             <h2>Constitution enters into force</h2>
@@ -442,10 +452,31 @@
       <div class="page-wrap">
         <h1 id="towns-title" class="visually-hidden">Towns</h1>
 
-        <div class="towns-map towns-map--first">
-          <p class="kicker">Territory</p>
+        <div id="towns-index">
+          <div class="town-card-grid">
+            <a class="town-card" href="#towns/heimstad">
+              <span class="kicker">Capital</span>
+              <h2>Heimstad</h2>
+              <p>The capital of the Nordic Empire on DiplomaticaMC.</p>
+              <span class="btn btn-outline town-card-button">Explore town</span>
+            </a>
+            <a class="town-card" href="#towns/stavanger">
+              <span class="kicker">Residential</span>
+              <h2>Stavanger</h2>
+              <p>The main place to live. Join, get a plot, and meet your neighbours.</p>
+              <span class="btn btn-outline town-card-button">Explore town</span>
+            </a>
+            <a class="town-card" href="#towns/nordic_island">
+              <span class="kicker">Industrial town</span>
+              <h2>Nordic_island</h2>
+              <p>An industrial town focused on technologies to gather resources, subsidized by the nation fund.</p>
+              <span class="btn btn-outline town-card-button">Explore town</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="towns-map">
           <h2 class="subhead">Nation map</h2>
-          <p class="section-intro">The Nordic Empire on DiplomaticaMC near <code>1330, -13450</code>.</p>
           <div class="map-frame-wrap">
             <div class="map-header">
               <span class="map-label">Nation map · X 1330, Z -13450</span>
@@ -462,32 +493,6 @@
           </div>
         </div>
 
-        <div id="towns-index">
-          <div class="town-card-grid">
-            <a class="town-card" href="#towns/heimstad">
-              <span class="kicker">Capital</span>
-              <h2>Heimstad</h2>
-              <p>The capital of the Nordic Empire on DiplomaticaMC.</p>
-              <span class="town-card-status">Active</span>
-              <span class="btn btn-outline town-card-button">Show what Heimstad has to offer</span>
-            </a>
-            <a class="town-card" href="#towns/stavanger">
-              <span class="kicker">Residential</span>
-              <h2>Stavanger</h2>
-              <p>The main place to live. Join, get a plot, and meet your neighbours.</p>
-              <span class="town-card-status">Active · Open to join</span>
-              <span class="btn btn-outline town-card-button">Show what Stavanger has to offer</span>
-            </a>
-            <a class="town-card" href="#towns/akerby">
-              <span class="kicker">Planned farm town</span>
-              <h2>Åkerby</h2>
-              <p>The Nordic Empire’s planned agricultural town.</p>
-              <span class="town-card-status">Planned</span>
-              <span class="btn btn-outline town-card-button">Show what Åkerby has to offer</span>
-            </a>
-          </div>
-        </div>
-
         <article class="town-detail" data-town="heimstad" hidden>
           <p class="town-back"><a href="#towns">← All towns</a></p>
           <header class="section-header town-detail-header">
@@ -500,6 +505,23 @@
               <span class="town-mayor-copy"><span>Mayor</span><strong>TheGoldenCowZ</strong></span>
             </div>
           </header>
+          <section class="town-detail-section">
+            <h2>Town map</h2>
+            <div class="map-frame-wrap">
+              <div class="map-header">
+                <span class="map-label">Heimstad · X 1330, Z -13450</span>
+                <a class="map-external" href="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450" target="_blank" rel="noopener noreferrer">Open full map ↗</a>
+              </div>
+              <iframe
+                class="map-frame"
+                title="DiplomaticaMC Heimstad map"
+                src="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                loading="lazy"
+                allow="fullscreen"
+              ></iframe>
+            </div>
+          </section>
           <section class="town-detail-section">
             <h2>What Heimstad has to offer</h2>
             <ul class="town-offerings">
@@ -542,6 +564,23 @@
             <div class="town-join"><strong>Ready to settle here?</strong><span>Join in-game with </span><code>/t join Stavanger</code></div>
           </header>
           <section class="town-detail-section">
+            <h2>Town map</h2>
+            <div class="map-frame-wrap">
+              <div class="map-header">
+                <span class="map-label">Stavanger · X 1330, Z -13450</span>
+                <a class="map-external" href="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450" target="_blank" rel="noopener noreferrer">Open full map ↗</a>
+              </div>
+              <iframe
+                class="map-frame"
+                title="DiplomaticaMC Stavanger map"
+                src="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                loading="lazy"
+                allow="fullscreen"
+              ></iframe>
+            </div>
+          </section>
+          <section class="town-detail-section">
             <h2>What Stavanger has to offer</h2>
             <ul class="town-offerings">
               <li>Open residential plots for new players</li>
@@ -575,30 +614,58 @@
           </section>
         </article>
 
-        <article class="town-detail" data-town="akerby" hidden>
+        <article class="town-detail" data-town="nordic_island" hidden>
           <p class="town-back"><a href="#towns">← All towns</a></p>
           <header class="section-header town-detail-header">
-            <p class="kicker">Planned farm town</p>
-            <h1 class="section-title">Åkerby</h1>
-            <p class="section-intro">Åkerby is planned as the realm’s first dedicated farm town.</p>
-            <p class="town-meta">Status: Planned · Mayor: Not yet appointed</p>
+            <p class="kicker">Industrial town</p>
+            <h1 class="section-title">Nordic_island</h1>
+            <p class="section-intro">Nordic_island is an industrial town focused on technologies to gather and refine resources for the realm.</p>
+            <p class="town-meta">Status: Active · Subsidized by the nation fund</p>
+            <div class="town-mayor">
+              <img class="player-head" src="assets/players/theospelarx.png" alt="theospelarx's Minecraft skin" width="52" height="52">
+              <span class="town-mayor-copy"><span>Mayor</span><strong>theospelarx</strong></span>
+            </div>
           </header>
           <section class="town-detail-section">
-            <h2>What Åkerby has to offer</h2>
+            <h2>Town map</h2>
+            <div class="map-frame-wrap">
+              <div class="map-header">
+                <span class="map-label">Nordic_island · X -306, Z -13720</span>
+                <a class="map-external" href="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=8&amp;x=-306&amp;z=-13720" target="_blank" rel="noopener noreferrer">Open full map ↗</a>
+              </div>
+              <iframe
+                class="map-frame"
+                title="DiplomaticaMC Nordic_island map"
+                src="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=8&amp;x=-306&amp;z=-13720"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                loading="lazy"
+                allow="fullscreen"
+              ></iframe>
+            </div>
+          </section>
+          <section class="town-detail-section">
+            <h2>What Nordic_island has to offer</h2>
             <ul class="town-offerings">
-              <li>Fields and food production</li>
-              <li>FarmCo supply links</li>
-              <li>Agricultural building projects</li>
+              <li>Industrial builds and resource infrastructure</li>
+              <li>Technologies aimed at gathering and refining resources</li>
+              <li>Support from the nation fund for public industry</li>
             </ul>
           </section>
           <section class="town-detail-section">
             <h2>History and growth</h2>
-            <ul class="town-history"><li>Åkerby is currently in the planning stage.</li></ul>
+            <ul class="town-history">
+              <li>Nordic_island was founded as the Nordic Empire’s industrial town, with its founding recorded on site.</li>
+              <li>The town’s founding and early industry were subsidized by the nation fund.</li>
+              <li><span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span> serves as mayor.</li>
+            </ul>
           </section>
           <section class="town-detail-section">
             <h2>Town gallery</h2>
             <div class="town-gallery">
-              <figure class="town-image"><div class="town-image-placeholder" role="img" aria-label="The future site of Åkerby"><span class="town-image-icon">◇</span><strong>Town image</strong><span>Add a planning image or future town screenshot here.</span></div></figure>
+              <figure class="town-image">
+                <img src="assets/Nordic_island.png" alt="The founding of Nordic_island" loading="lazy">
+                <figcaption>The founding of Nordic_island</figcaption>
+              </figure>
             </div>
           </section>
         </article>
@@ -652,10 +719,10 @@
               <h3>What FarmCo sells</h3>
               <p>FarmCo is the selling arm of state farming: food and farm goods moved from field to chest for residents and trade partners.</p>
             </a>
-            <a class="paper-column" href="#times/akerby-planned" data-route="times/akerby-planned">
-              <p class="paper-kicker">Plans</p>
-              <h3>Åkerby on the horizon</h3>
-              <p>Åkerby will be the Nordic Empire’s first farm town. Fields first, then the goods that FarmCo brings to market.</p>
+            <a class="paper-column" href="#times/nordic-island-founded" data-route="times/nordic-island-founded">
+              <p class="paper-kicker">Towns</p>
+              <h3>Nordic_island rises</h3>
+              <p>An industrial town focused on resource technologies, led by mayor <span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span> and subsidized by the nation fund.</p>
             </a>
             <a class="paper-column" href="#times/stavanger-launch" data-route="times/stavanger-launch">
               <p class="paper-kicker">Town life</p>
@@ -678,7 +745,7 @@
           <p class="times-byline">By the Nordic Times commercial desk</p>
           <div class="times-body">
             <p>STAVANGER. The Nordic Empire has opened its first company. <strong>FarmCo</strong> is state-run and stands as the selling side of the nation’s goods: the shopfront where farm produce meets buyers.</p>
-            <p>FarmCo does not chase private vanity. It moves crops and farm goods from the realm’s fields into market chests at prices set for the common good. When Åkerby rises as the first farm town, the same pipeline will feed FarmCo’s shelves.</p>
+            <p>FarmCo does not chase private vanity. It moves crops and farm goods from the realm’s fields into market chests at prices set for the common good. Industry at Nordic_island will feed the realm’s resource needs while FarmCo keeps the farm shelves stocked.</p>
             <p>Residents who farm for the Nordic Empire are feeding one company and one people. Built together. Bound together. Strong together.</p>
           </div>
         </article>
@@ -702,7 +769,7 @@
           <p class="times-byline">By the Nordic Times editorial desk</p>
           <div class="times-body">
             <p>HEIMSTAD. <span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span> and fellow residents confirm Heimstad as the capital of the Nordic Empire on DiplomaticaMC. Stavanger remains the main residential town, open since 1 June.</p>
-            <p>Next on the horizon is Åkerby, the Nordic Empire’s first farm town, tied to FarmCo as the selling side of its harvest. Diplomacy with border towns will follow as the map allows.</p>
+            <p>The map also holds <strong>Nordic_island</strong>, an industrial town focused on technologies to gather resources, led by mayor <span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span> and subsidized by the nation fund. Diplomacy with border towns will follow as the map allows.</p>
           </div>
         </article>
 
@@ -719,14 +786,15 @@
           </div>
         </article>
 
-        <article id="times-story-akerby-planned" class="times-story" data-story="akerby-planned" hidden>
+        <article id="times-story-nordic-island-founded" class="times-story" data-story="nordic-island-founded" hidden>
           <p class="times-back"><a href="#times" data-route="times">← Back to The Nordic Times</a></p>
-          <p class="paper-kicker">Plans · 21 June 2026</p>
-          <h1>Åkerby on the horizon</h1>
-          <p class="times-byline">By the Nordic Times planning desk</p>
+          <p class="paper-kicker">Towns · 3 August 2026</p>
+          <h1>Nordic_island rises</h1>
+          <p class="times-byline">By the Nordic Times industrial desk</p>
           <div class="times-body">
-            <p>NORDIC EMPIRE. Åkerby will be the Nordic Empire’s first farm town. Fields and food for the realm come first; FarmCo stands ready as the selling side of those goods.</p>
-            <p>Until the town rises, FarmCo already serves as the nation’s first company: state-run, public, and aimed at the common market rather than private display.</p>
+            <p>NORDIC EMPIRE. <strong>Nordic_island</strong> stands as the Nordic Empire’s industrial town: built around technologies to gather and refine resources for the realm.</p>
+            <p>Mayor <span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span> leads the town. Its founding and early industry were subsidized by the nation fund, so the island’s workshops serve the people as a whole.</p>
+            <p>Residents can read more on the <a href="#towns/nordic_island">Towns</a> page, including a picture of the founding of the town.</p>
           </div>
         </article>
       </div>
@@ -798,8 +866,8 @@
             <p><strong>Heimstad</strong> is the capital. <strong>Stavanger</strong> is the main residential town. See <a href="#towns" data-tab="towns">Towns</a> and the map on <a href="#home" data-tab="home">Home</a>.</p>
           </details>
           <details class="faq-item">
-            <summary>What towns are planned?</summary>
-            <p>One for a start: <strong>Åkerby</strong>, an agricultural town. See <a href="#towns" data-tab="towns">Towns</a>.</p>
+            <summary>What other towns are there?</summary>
+            <p>Beyond Heimstad and Stavanger, <strong>Nordic_island</strong> is the industrial town focused on technologies to gather resources. Mayor: <span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span>. See <a href="#towns" data-tab="towns">Towns</a>.</p>
           </details>
           <details class="faq-item">
             <summary>Who leads the Nordic Empire?</summary>
