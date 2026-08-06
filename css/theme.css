@@ -1,0 +1,115 @@
+/**
+ * Nordic Empire Nation Site: Design System & Style Guide
+ * ================================================
+ * All pages import this file before styles.css. Components MUST use these
+ * tokens: never hard-code hex values in page markup or one-off CSS.
+ *
+ * BRAND
+ * - Nation: Nordic Empire (DiplomaticaMC)
+ * - Flag: newflag.jpg
+ * - Motto: Built together. Bound together. Strong together.
+ *
+ * COLOUR PALETTE
+ * - Primary (red):   nation identity, CTAs, active nav, headings accent
+ * - Secondary (navy): links hover, secondary accents
+ * - Surface:          cards, panels, header backdrop
+ * - Ink:              body text hierarchy
+ *
+ * TYPOGRAPHY
+ * - Body:    Source Sans 3, 16px base, 1.65 line-height
+ * - Display: Instrument Serif: hero titles, section headings, brand
+ * - Scale:   --text-xs … --text-3xl (fluid where noted)
+ *
+ * SPACING (4px grid)
+ * - --space-1 (4px) through --space-12 (48px)
+ *
+ * COMPONENTS (see styles.css)
+ * - .btn-primary / .btn-outline: actions
+ * - .panel: full-page views
+ * - .nav-link.active: red gradient pill
+ * - .nav-strip: flag-colour accent bar (blue → white → red)
+ *
+ * ACCESSIBILITY
+ * - Focus rings use --focus-ring (navy)
+ * - Minimum contrast: ink on bg ≥ 4.5:1; white on primary ≥ 4.5:1
+ */
+
+:root {
+  /* Brand colours (Nordic Empire flag) */
+  --nordic-red: #ba0c2f;
+  --nordic-red-dark: #8b0924;
+  --nordic-red-soft: #fdf2f4;
+  --nordic-blue: #00205b;
+  --nordic-blue-bright: #003da5;
+  --nordic-blue-soft: #eef2f8;
+  --nordic-white: #ffffff;
+
+  /* Semantic aliases (used throughout styles.css) */
+  --red: var(--nordic-red);
+  --red-dark: var(--nordic-red-dark);
+  --red-soft: var(--nordic-red-soft);
+
+  /* Neutrals */
+  --ink: #0f172a;
+  --ink-soft: #334155;
+  --muted: #64748b;
+  --bg: #f8fafc;
+  --bg-warm: #f1f5f9;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+  --shadow: 0 18px 44px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 24px 56px rgba(15, 23, 42, 0.12);
+
+  /* Layout */
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  --header-h: 72px;
+  --content-max: 1100px;
+
+  /* Typography */
+  --font: "Source Sans 3", "Source Sans Pro", system-ui, sans-serif;
+  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.35rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration: 200ms;
+
+  /* Focus & states */
+  --focus-ring: 0 0 0 3px rgba(0, 32, 91, 0.35);
+  --primary-gradient: linear-gradient(135deg, var(--nordic-red), var(--nordic-red-dark));
+  --accent-gradient: linear-gradient(90deg, var(--nordic-blue-bright), var(--nordic-blue), var(--nordic-red));
+  --flag-strip: linear-gradient(
+    90deg,
+    var(--nordic-blue-bright) 0%,
+    var(--nordic-blue) 35%,
+    var(--nordic-white) 50%,
+    var(--nordic-red) 65%,
+    var(--nordic-red-dark) 100%
+  );
+
+  /* Component tokens */
+  --btn-primary-bg: var(--primary-gradient);
+  --btn-primary-color: var(--nordic-white);
+  --btn-outline-border: var(--nordic-blue);
+  --btn-outline-color: var(--nordic-blue);
+  --map-bg: #0f172a;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}

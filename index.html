@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nordic Empire | Official Nation Site</title>
+  <meta name="description" content="Nordic Empire on DiplomaticaMC. Scandinavian and humanist roots, living space for the Nordic people. Capital Heimstad.">
+  <meta name="theme-color" content="#ba0c2f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-top">
+        <a class="brand" href="#home" data-tab="home">
+          <img class="brand-flag" src="newflag.jpg" alt="Nordic Empire flag" width="48" height="35">
+          <span class="brand-text">
+            <span class="brand-name">Nordic Empire</span>
+            <span class="brand-tag">DiplomaticaMC Nation</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav id="main-nav" class="main-nav" aria-label="Main">
+        <a href="#home" class="nav-link active" data-tab="home">Home</a>
+        <a href="#about" class="nav-link" data-tab="about">About</a>
+        <a href="#history" class="nav-link" data-tab="history">History</a>
+        <a href="#constitution" class="nav-link" data-tab="constitution">Constitution</a>
+        <a href="#towns" class="nav-link" data-tab="towns">Towns</a>
+        <a href="#times" class="nav-link" data-tab="times">Times</a>
+        <a href="#join" class="nav-link" data-tab="join">Join</a>
+        <a href="#faq" class="nav-link" data-tab="faq">FAQ</a>
+      </nav>
+    </div>
+    <div class="nav-strip" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="panel panel--home active" aria-labelledby="home-title">
+      <div class="landing-hero landing-hero--compact">
+        <div class="landing-hero-bg" aria-hidden="true"></div>
+        <div class="landing-hero-strip" aria-hidden="true"></div>
+        <div class="landing-hero-inner">
+          <p class="hero-eyebrow">Official nation site · DiplomaticaMC</p>
+          <h1 id="home-title" class="hero-title">Nordic Empire</h1>
+          <p class="hero-deck">With deep Scandinavian and humanist roots, we make living space for the Nordic people on DiplomaticaMC.</p>
+          <div class="hero-actions">
+            <a href="#join" class="btn btn-primary" data-tab="join">How to join</a>
+            <a href="#faq" class="btn btn-outline" data-tab="faq">FAQ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing-section landing-section--map">
+        <div class="landing-wrap">
+          <header class="landing-section-header">
+            <p class="kicker">Territory</p>
+            <h2 class="landing-section-title">Nation map</h2>
+            <p class="landing-section-intro">The Nordic Empire on DiplomaticaMC near <code>1330, -13450</code>.</p>
+          </header>
+          <div class="map-frame-wrap">
+            <div class="map-header">
+              <span class="map-label">Nation map · X 1330, Z -13450</span>
+              <a class="map-external" href="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450" target="_blank" rel="noopener noreferrer">Open full map ↗</a>
+            </div>
+            <iframe
+              class="map-frame"
+              title="DiplomaticaMC Nordic Empire nation map"
+              src="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450"
+              sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+              loading="lazy"
+              allow="fullscreen"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing-section landing-section--tight">
+        <div class="landing-wrap">
+          <header class="landing-section-header">
+            <p class="kicker">Newcomers</p>
+            <h2 class="landing-section-title">Looking to join?</h2>
+            <p class="landing-section-intro">Stavanger is open. Connect to the server, run the town join command, and settle in. No application needed.</p>
+          </header>
+
+          <div class="join-ip-row">
+            <p class="join-ip-label">Server IP</p>
+            <div class="join-ip-box">
+              <code id="server-ip">diplomaticamc.com</code>
+              <button type="button" class="btn btn-outline btn-copy" data-copy="diplomaticamc.com" aria-label="Copy server IP">Copy</button>
+            </div>
+          </div>
+
+          <ol class="steps steps--home">
+            <li>
+              <strong>Join the server</strong>
+              <span>Add <a href="https://diplomaticamc.com/" target="_blank" rel="noopener noreferrer">DiplomaticaMC</a> in Multiplayer with IP <code>diplomaticamc.com</code>.</span>
+            </li>
+            <li>
+              <strong>Join the town</strong>
+              <span>In chat, run <code>/t join Stavanger</code>.</span>
+            </li>
+            <li>
+              <strong>Settle in</strong>
+              <span>Get a plot, meet neighbours, and make yourself at home.</span>
+            </li>
+          </ol>
+          <p class="landing-section-cta">
+            <a href="#join" class="btn btn-primary" data-tab="join">Full join guide</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="landing-section landing-section--alt">
+        <div class="landing-wrap">
+          <header class="landing-section-header">
+            <p class="kicker">Nordic Times</p>
+            <h2 class="landing-section-title">From the gazette</h2>
+            <p class="landing-section-intro">Headlines from the capital and the residential town.</p>
+          </header>
+          <ul class="times-headlines" role="list">
+            <li>
+              <a href="#times/constitution-in-force" data-route="times/constitution-in-force">
+                <span class="times-headlines-meta">28 Jul 2026</span>
+                <strong>The Nordic Empire is founded</strong>
+              </a>
+            </li>
+            <li>
+              <a href="#times/farmco-opens" data-route="times/farmco-opens">
+                <span class="times-headlines-meta">20 Jul 2026</span>
+                <strong>FarmCo opens: the Nordic Empire’s first company</strong>
+              </a>
+            </li>
+            <li>
+              <a href="#times/stavanger-launch" data-route="times/stavanger-launch">
+                <span class="times-headlines-meta">1 Jun 2026</span>
+                <strong>Stavanger opens its gates</strong>
+              </a>
+            </li>
+          </ul>
+          <p class="landing-section-cta">
+            <a href="#times" class="btn btn-outline" data-tab="times">All editions</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="landing-section">
+        <div class="landing-wrap">
+          <header class="landing-section-header">
+            <p class="kicker">Our nation</p>
+            <h2 class="landing-section-title">What we stand for</h2>
+            <p class="landing-section-intro">The Nordic Empire is one people under one law: Protestant, ordered, and built to last.</p>
+          </header>
+          <div class="prose">
+            <p>We stand for living space and national unity. Residents pull the same direction: duty to the realm, loyalty to each other, and strength that comes from sticking together. The Church of the Nordic Empire, a Protestant church, is the established church of the realm. Heimstad is the capital; Stavanger is home for most residents.</p>
+          </div>
+          <ul class="principle-list" role="list">
+            <li>
+              <strong>United</strong>
+              <span>One nation, one direction. We stick together.</span>
+            </li>
+            <li>
+              <strong>Ordered</strong>
+              <span>Clear law, clear duty, peaceful life under the King.</span>
+            </li>
+            <li>
+              <strong>Protestant</strong>
+              <span>The Church of the Nordic Empire remains the established church of the realm.</span>
+            </li>
+          </ul>
+          <h3 class="landing-subhead">Read more</h3>
+          <ul class="explore-list" role="list">
+            <li><a href="#about" data-tab="about"><strong>About</strong><span>Who we are, towns at a glance, and how the nation works.</span></a></li>
+            <li><a href="#history" data-tab="history"><strong>History</strong><span>Founding, milestones, and the nation record.</span></a></li>
+            <li><a href="#constitution" data-tab="constitution"><strong>Constitution</strong><span>Supreme law of the realm: form of government and faith.</span></a></li>
+            <li><a href="#towns" data-tab="towns"><strong>Towns</strong><span>Heimstad, Stavanger, Nordic_island, and Gardsbruk.</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="panel" aria-labelledby="about-title" hidden>
+      <div class="page-wrap">
+        <header class="section-header">
+          <p class="kicker">The realm</p>
+          <h1 id="about-title" class="section-title">About the Nordic Empire</h1>
+          <p class="section-intro">Our heart lies in Scandinavian ground: strong culture and long memory, carried into every street of Stavanger and every hall of Heimstad on DiplomaticaMC.</p>
+        </header>
+
+        <div class="info-grid">
+          <div class="info-block">
+            <h2>At a glance</h2>
+            <dl class="fact-list">
+              <div><dt>Nation</dt><dd>Nordic Empire</dd></div>
+              <div><dt>Capital</dt><dd>Heimstad</dd></div>
+              <div><dt>Residential</dt><dd>Stavanger</dd></div>
+              <div><dt>Industrial</dt><dd>Nordic_island</dd></div>
+              <div><dt>Agricultural</dt><dd>Gardsbruk</dd></div>
+              <div><dt>Motto</dt><dd>Built together. Bound together. Strong together.</dd></div>
+              <div><dt>Leader</dt><dd><span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span></dd></div>
+              <div><dt>Co-leader</dt><dd><span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span></dd></div>
+              <div><dt>Established church</dt><dd>Church of the Nordic Empire (Protestant)</dd></div>
+              <div><dt>Server</dt><dd><a href="https://diplomaticamc.com/" target="_blank" rel="noopener noreferrer">DiplomaticaMC</a> · <code>diplomaticamc.com</code></dd></div>
+            </dl>
+          </div>
+
+          <div class="info-block">
+            <h2>Leadership &amp; residents</h2>
+            <ul class="roster-list">
+              <li class="roster-player">
+                <img class="player-head" src="assets/players/thegoldencowz.png" alt="TheGoldenCowZ's Minecraft skin" width="48" height="48" loading="lazy">
+                <span class="roster-player-copy"><strong>TheGoldenCowZ</strong><span>Leader · King of the Nordic Empire</span></span>
+              </li>
+              <li class="roster-player">
+                <img class="player-head" src="assets/players/jfizzle9000.png" alt="Jfizzle9000's Minecraft skin" width="48" height="48" loading="lazy">
+                <span class="roster-player-copy"><strong>Jfizzle9000</strong><span>Co-leader · Mayor of Stavanger</span></span>
+              </li>
+              <li class="roster-player">
+                <img class="player-head" src="assets/players/gisa1327.png" alt="Gisa1327's Minecraft skin" width="48" height="48" loading="lazy">
+                <span class="roster-player-copy"><strong>Gisa1327</strong><span>Founder</span></span>
+              </li>
+              <li class="roster-player">
+                <img class="player-head" src="assets/players/zaksmak8113.png" alt="Zaksmak8113's Minecraft skin" width="48" height="48" loading="lazy">
+                <span class="roster-player-copy"><strong>Zaksmak8113</strong><span>Founder · Mayor of Gardsbruk</span></span>
+              </li>
+              <li class="roster-player">
+                <img class="player-head" src="assets/players/theospelarx.png" alt="theospelarx's Minecraft skin" width="48" height="48" loading="lazy">
+                <span class="roster-player-copy"><strong>theospelarx</strong><span>Mayor of Nordic_island</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <article class="purpose-story info-block--wide">
+          <header class="purpose-story-header">
+            <p class="kicker">Why we exist</p>
+            <h2>Our purpose</h2>
+            <p class="purpose-lead">Built together. Bound together. Strong together.</p>
+          </header>
+
+          <div class="purpose-prose">
+            <p>
+              The Nordic Empire did not begin as a conquest or a flag planted for show. Four founders gathered on DiplomaticaMC and asked a simpler question: where can the Nordic people live, work, and stay loyal to one another under one roof? The answer became a realm with Scandinavian roots, a Protestant church, and a capital that keeps the nation steady while Stavanger gives people a place to call home.
+            </p>
+            <p>
+              That is still the heart of it. We make living space. Plots, paths, halls, and public builds are not decoration; they are the proof that residents pull the same direction. Clear law keeps the peace. Loyalty and discipline turn a list of players into one people.
+            </p>
+            <p>
+              For now the gaze stays inward. Before the Nordic Empire looks far beyond its borders, the first work is to raise the state itself: towns that feel finished, institutions that hold, and a people already bound to one another.
+            </p>
+          </div>
+
+          <ol class="purpose-beats" role="list">
+            <li>
+              <h3>Build the realm</h3>
+              <p>Raise Heimstad and Stavanger with shared labour. Expect residents who stick together, honour duty to the realm, and put the common build before vanity.</p>
+            </li>
+            <li>
+              <h3>Steady the state</h3>
+              <p>Law, church, and crown before distant ambitions. A nation that stands firm at home has little need to chase noise at the edge of the map.</p>
+            </li>
+            <li>
+              <h3>Guard what we make</h3>
+              <p>Defence protects the realm and its people. Readiness and the shield of the King exist so homes and work endure.</p>
+            </li>
+          </ol>
+
+          <div class="purpose-prose purpose-prose--close">
+            <p>
+              Order at home. Unity among residents. Strength grown from within. That is the Nordic Empire we build every session: not a raid calendar, but a lasting place under one law and one motto.
+            </p>
+            <p class="purpose-links">
+              Read the full law in the <a href="#constitution" data-tab="constitution">Constitution of the Nordic Empire</a>. Trace the founding and early milestones in <a href="#history" data-tab="history">History</a>.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- HISTORY -->
+    <section id="history" class="panel" aria-labelledby="history-title" hidden>
+      <div class="page-wrap page-wrap--narrow">
+        <header class="section-header">
+          <p class="kicker">Nation record</p>
+          <h1 id="history-title" class="section-title">History</h1>
+          <p class="section-intro">How the Nordic Empire was founded and how it grew on DiplomaticaMC.</p>
+        </header>
+
+        <ol class="history-timeline">
+          <li>
+            <p class="history-date">3 August 2026</p>
+            <h2>Gardsbruk founded</h2>
+            <p>Gardsbruk rises as the agricultural town, with offices and an apartment building. Mayor: <span class="player-ref"><img class="player-head" src="assets/players/zaksmak8113.png" alt="" width="22" height="22"><span>Zaksmak8113</span></span>. Funded by <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span>.</p>
+          </li>
+          <li>
+            <p class="history-date">3 August 2026</p>
+            <h2>Nordic_island founded</h2>
+            <p>Nordic_island rises as the industrial town focused on technologies to gather resources. Mayor: <span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span>. The town’s founding was subsidized by the nation fund.</p>
+          </li>
+          <li>
+            <p class="history-date">28 July 2026</p>
+            <h2>Constitution enters into force</h2>
+            <p>The Constitution of the Nordic Empire is ratified: limited monarchy, Protestant faith alone, Church of the Nordic Empire as Established Church.</p>
+          </li>
+          <li>
+            <p class="history-date">20 July 2026</p>
+            <h2>FarmCo opens</h2>
+            <p>The Nordic Empire’s first company goes live: state-run sales of the realm’s farm goods.</p>
+          </li>
+          <li>
+            <p class="history-date">21 June 2026</p>
+            <h2>Heimstad named capital</h2>
+            <p>Heimstad is confirmed as the capital of the Nordic Empire.</p>
+          </li>
+          <li>
+            <p class="history-date">1 June 2026</p>
+            <h2>Stavanger opens</h2>
+            <p>The residential town launched. Residents join with <code>/t join Stavanger</code>. <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span> serves as mayor.</p>
+          </li>
+          <li>
+            <p class="history-date">Founding</p>
+            <h2>The four founders</h2>
+            <p>The Nordic Empire was founded by <strong class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></strong>, <strong class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></strong>, <strong class="player-ref"><img class="player-head" src="assets/players/gisa1327.png" alt="" width="22" height="22"><span>Gisa1327</span></strong>, and <strong class="player-ref"><img class="player-head" src="assets/players/zaksmak8113.png" alt="" width="22" height="22"><span>Zaksmak8113</span></strong>. About 25% of the founding funding came from <span class="player-ref"><img class="player-head" src="assets/players/gisa1327.png" alt="" width="22" height="22"><span>Gisa1327</span></span>; the rest came from <span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span>.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONSTITUTION -->
+    <section id="constitution" class="panel panel--constitution" aria-labelledby="constitution-title" hidden>
+      <div class="page-wrap page-wrap--narrow">
+        <header class="section-header constitution-masthead">
+          <p class="kicker">Supreme law of the realm</p>
+          <h1 id="constitution-title" class="section-title">The Constitution of the Nordic Empire</h1>
+          <p class="constitution-meta">On DiplomaticaMC · Ratified 28 July 2026 · In force</p>
+        </header>
+
+        <article class="constitution-doc">
+          <p class="constitution-preamble">
+            We, the residents of the Nordic Empire on DiplomaticaMC, establish this Constitution so that our nation may endure as one people under one law: built together, bound together, strong together.
+          </p>
+
+          <h2 class="constitution-chapter">A. Form of government</h2>
+
+          <section class="constitution-article" id="art-1">
+            <h3><span class="art-num">Article 1.</span> The realm</h3>
+            <p>The Nordic Empire is a free, independent, indivisible and inalienable realm on DiplomaticaMC. Its form of government is a limited monarchy under the King.</p>
+          </section>
+
+          <section class="constitution-article" id="art-2">
+            <h3><span class="art-num">Article 2.</span> Values</h3>
+            <p>Our values will remain our Protestant heritage. This Constitution shall ensure order among residents, unity of the nation, respect for server rules, and the dignity of all inhabitants of the realm. Residents owe loyalty to the Nordic Empire and to one another.</p>
+          </section>
+
+          <h2 class="constitution-chapter">B. The executive power, the King, and religion</h2>
+
+          <section class="constitution-article" id="art-3">
+            <h3><span class="art-num">Article 3.</span> Executive power</h3>
+            <p>The executive power is vested in the King. This Constitution does not replace in-game Towny mechanics; it binds how the Nordic Empire’s players agree to live and work together on top of server rules.</p>
+          </section>
+
+          <section class="constitution-article" id="art-4">
+            <h3><span class="art-num">Article 4.</span> The King’s faith</h3>
+            <p>The King shall at all times profess the Protestant religion.</p>
+          </section>
+
+          <section class="constitution-article" id="art-5">
+            <h3><span class="art-num">Article 5.</span> Capital and territory</h3>
+            <p>The capital of the realm is Heimstad. Stavanger is the principal residential town of the nation. Nation territory is whatever chunks the Nordic Empire holds on the DiplomaticaMC map, including member towns admitted under Article 9.</p>
+          </section>
+
+          <section class="constitution-article" id="art-6">
+            <h3><span class="art-num">Article 6.</span> Religion of the realm</h3>
+            <p>The religion of the realm is Protestantism alone. The Church of the Nordic Empire, a Protestant church, is the Established Church of the Nordic Empire and will as such be supported by the nation in builds, ceremonies, and public life. Detailed provisions as to its system may be laid down by the King. No other religion shall be established, practised, or promoted within the nation.</p>
+          </section>
+
+          <h2 class="constitution-chapter">C. Rights of citizens</h2>
+
+          <section class="constitution-article" id="art-7">
+            <h3><span class="art-num">Article 7.</span> Rights of residents</h3>
+            <p>Every resident may settle in Stavanger, visit Heimstad, use public shops and paths, read official documents, and live under the protection of this Constitution. No resident shall be expelled from a town or from shared public builds without notice from the King or from the mayor of that town.</p>
+          </section>
+
+          <section class="constitution-article" id="art-8">
+            <h3><span class="art-num">Article 8.</span> Duties of residents</h3>
+            <p>Residents honour server rules, respect claimed plots, pay agreed shop prices, and serve the common good of the nation. Raiding allied or neutral towns, griefing nation storage, or leaking unreleased town plans violates this Constitution.</p>
+          </section>
+
+          <section class="constitution-article" id="art-9">
+            <h3><span class="art-num">Article 9.</span> Towns and admission</h3>
+            <p>Stavanger is open: anyone may join the residential town and become a resident. Additional towns enter the nation by charter: mayors who accept the Nordic Empire’s neutrality and the articles of this Constitution.</p>
+          </section>
+
+          <section class="constitution-article" id="art-10">
+            <h3><span class="art-num">Article 10.</span> Neutrality and purpose</h3>
+            <p>The Nordic Empire is a neutral nation. We do not seek wars of conquest. Our purpose is cooperative growth: harbour trade, shared builds, food security, and diplomacy with border towns before force. Defence exists to protect residents and escort hauls, not to raid neighbours without cause.</p>
+          </section>
+
+          <section class="constitution-article" id="art-11">
+            <h3><span class="art-num">Article 11.</span> Economy</h3>
+            <p>Trade is encouraged at the capital and residential market rows. Shared contributions may fund public infrastructure, farms, and defence readiness before vanity builds.</p>
+          </section>
+
+          <h2 class="constitution-chapter">D. Stewardship of animals and the land</h2>
+
+          <section class="constitution-article" id="art-12">
+            <h3><span class="art-num">Article 12.</span> Protection of animals</h3>
+            <p>Animals within the realm shall not be harmed unnecessarily. Every resident shall treat livestock, pets, wildlife, and working animals with care. Cruelty for sport, torment, or display is forbidden.</p>
+          </section>
+
+          <section class="constitution-article" id="art-13">
+            <h3><span class="art-num">Article 13.</span> Animal abuse</h3>
+            <p>Animal abuse shall not be tolerated. The King may exclude from farms, pens, and society builds any resident who wilfully abuses animals. Repeated abuse is grounds for removal from shared nation projects after notice.</p>
+          </section>
+
+          <section class="constitution-article" id="art-14">
+            <h3><span class="art-num">Article 14.</span> Ethical farming only</h3>
+            <p>Farming in the Nordic Empire shall be ethical only. Nation farms and town agriculture shall provide adequate space, feed, and shelter; shall not keep animals in needless suffering; and shall harvest only what is needed for the sustenance and trade of the realm. Factory-style cruelty and wasteful slaughter for spectacle have no place under this Constitution.</p>
+          </section>
+
+          <section class="constitution-article" id="art-15">
+            <h3><span class="art-num">Article 15.</span> Land and food security</h3>
+            <p>Fields, pens, and food stores shall follow the standards of Articles 12 to 14. Border towns joining under Article 9 accept these standards as a condition of charter.</p>
+          </section>
+
+          <h2 class="constitution-chapter">E. General provisions</h2>
+
+          <section class="constitution-article" id="art-16">
+            <h3><span class="art-num">Article 16.</span> Record</h3>
+            <p>The nation shall keep a record of charters, plans, and before/after views for future residents. The Nordic Times may publish matters of public interest.</p>
+          </section>
+
+          <section class="constitution-article" id="art-17">
+            <h3><span class="art-num">Article 17.</span> Amendments</h3>
+            <p>Amendments require the King’s consent and publication in the Nordic Times and on this page with a new date. No amendment may abolish the Protestant religion of the realm under Articles 4 and 6, except by a solemn act of the King published to all residents.</p>
+          </section>
+
+          <section class="constitution-article" id="art-18">
+            <h3><span class="art-num">Article 18.</span> Entry into force</h3>
+            <p>This Constitution enters into force on 28 July 2026, as ratified by <span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span>, King of the Nordic Empire.</p>
+          </section>
+
+          <p class="constitution-closing">Given at Heimstad, 28 July 2026.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TOWNS -->
+    <section id="towns" class="panel" aria-labelledby="towns-title" hidden>
+      <div class="page-wrap">
+        <h1 id="towns-title" class="visually-hidden">Towns</h1>
+
+        <div id="towns-index">
+          <div class="town-card-grid">
+            <a class="town-card" href="#towns/heimstad">
+              <span class="kicker">Capital</span>
+              <h2>Heimstad</h2>
+              <p>The capital of the Nordic Empire on DiplomaticaMC.</p>
+              <span class="btn btn-outline town-card-button">Explore town</span>
+            </a>
+            <a class="town-card" href="#towns/stavanger">
+              <span class="kicker">Residential</span>
+              <h2>Stavanger</h2>
+              <p>The main place to live. Join, get a plot, and meet your neighbours.</p>
+              <span class="btn btn-outline town-card-button">Explore town</span>
+            </a>
+            <a class="town-card" href="#towns/nordic_island">
+              <span class="kicker">Industrial town</span>
+              <h2>Nordic_island</h2>
+              <p>An industrial town focused on technologies to gather resources, subsidized by the nation fund.</p>
+              <span class="btn btn-outline town-card-button">Explore town</span>
+            </a>
+            <a class="town-card" href="#towns/gardsbruk">
+              <span class="kicker">Agricultural town</span>
+              <h2>Gardsbruk</h2>
+              <p>An agricultural town with offices and an apartment building, funded by Jfizzle9000.</p>
+              <span class="btn btn-outline town-card-button">Explore town</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="towns-map">
+          <h2 class="subhead">Nation map</h2>
+          <div class="map-frame-wrap">
+            <div class="map-header">
+              <span class="map-label">Nation map · X 1330, Z -13450</span>
+              <a class="map-external" href="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450" target="_blank" rel="noopener noreferrer">Open full map ↗</a>
+            </div>
+            <iframe
+              class="map-frame"
+              title="DiplomaticaMC Nordic Empire nation map"
+              src="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450"
+              sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+              loading="lazy"
+              allow="fullscreen"
+            ></iframe>
+          </div>
+        </div>
+
+        <article class="town-detail" data-town="heimstad" hidden>
+          <p class="town-back"><a href="#towns">← All towns</a></p>
+          <header class="section-header town-detail-header">
+            <p class="kicker">Capital</p>
+            <h1 class="section-title">Heimstad</h1>
+            <p class="section-intro">Heimstad is the political heart of the realm and the seat of the Nordic Empire.</p>
+            <p class="town-meta">Status: Active</p>
+            <div class="town-mayor">
+              <img class="player-head" src="assets/players/thegoldencowz.png" alt="TheGoldenCowZ's Minecraft skin" width="52" height="52">
+              <span class="town-mayor-copy"><span>Mayor</span><strong>TheGoldenCowZ</strong></span>
+            </div>
+          </header>
+          <section class="town-detail-section">
+            <h2>Town map</h2>
+            <div class="map-frame-wrap">
+              <div class="map-header">
+                <span class="map-label">Heimstad · X 1330, Z -13450</span>
+                <a class="map-external" href="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450" target="_blank" rel="noopener noreferrer">Open full map ↗</a>
+              </div>
+              <iframe
+                class="map-frame"
+                title="DiplomaticaMC Heimstad map"
+                src="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                loading="lazy"
+                allow="fullscreen"
+              ></iframe>
+            </div>
+          </section>
+          <section class="town-detail-section">
+            <h2>What Heimstad has to offer</h2>
+            <ul class="town-offerings">
+              <li>The capital and seat of government</li>
+              <li>Public halls and national institutions</li>
+              <li>A central place for ceremonies and visitors</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>History and growth</h2>
+            <ul class="town-history">
+              <li>Heimstad was confirmed as the capital of the Nordic Empire on 21 June 2026.</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>Buildings and landmarks</h2>
+            <div class="town-landmarks">
+              <article class="town-landmark"><h3>National halls</h3><p>The public buildings at the centre of the Nordic Empire.</p></article>
+            </div>
+          </section>
+          <section class="town-detail-section">
+            <h2>Town gallery</h2>
+            <div class="town-gallery">
+              <figure class="town-image"><div class="town-image-placeholder" role="img" aria-label="A view of Heimstad"><span class="town-image-icon">◇</span><strong>Town image</strong><span>Add a screenshot of Heimstad here.</span></div></figure>
+            </div>
+          </section>
+        </article>
+
+        <article class="town-detail" data-town="stavanger" hidden>
+          <p class="town-back"><a href="#towns">← All towns</a></p>
+          <header class="section-header town-detail-header">
+            <p class="kicker">Residential</p>
+            <h1 class="section-title">Stavanger</h1>
+            <p class="section-intro">Stavanger is the residential heart of the Nordic Empire: an open town built for homes, community projects, and new residents.</p>
+            <p class="town-meta">Status: Active · Open to join</p>
+            <div class="town-mayor">
+              <img class="player-head" src="assets/players/jfizzle9000.png" alt="Jfizzle9000's Minecraft skin" width="52" height="52">
+              <span class="town-mayor-copy"><span>Mayor</span><strong>Jfizzle9000</strong></span>
+            </div>
+            <div class="town-join"><strong>Ready to settle here?</strong><span>Join in-game with </span><code>/t join Stavanger</code></div>
+          </header>
+          <section class="town-detail-section">
+            <h2>Town map</h2>
+            <div class="map-frame-wrap">
+              <div class="map-header">
+                <span class="map-label">Stavanger · X 1330, Z -13450</span>
+                <a class="map-external" href="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450" target="_blank" rel="noopener noreferrer">Open full map ↗</a>
+              </div>
+              <iframe
+                class="map-frame"
+                title="DiplomaticaMC Stavanger map"
+                src="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=4&amp;x=1330&amp;z=-13450"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                loading="lazy"
+                allow="fullscreen"
+              ></iframe>
+            </div>
+          </section>
+          <section class="town-detail-section">
+            <h2>What Stavanger has to offer</h2>
+            <ul class="town-offerings">
+              <li>Open residential plots for new players</li>
+              <li>An underground shopping mall</li>
+              <li>Community builds and public paths</li>
+              <li>The cathedral project</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>History and growth</h2>
+            <ul class="town-history">
+              <li>Stavanger opened its gates on 1 June 2026 as the nation’s principal residential town.</li>
+              <li>Stavanger has grown to more than 300 claimed chunks.</li>
+              <li><span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span> has already contributed massive amounts of gold to the town’s growth and public projects.</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>Buildings and landmarks</h2>
+            <div class="town-landmarks">
+              <article class="town-landmark"><h3>The cathedral project</h3><p>A huge cathedral planned as one of Stavanger’s defining public builds and a home for the Church of the Nordic Empire.</p></article>
+              <article class="town-landmark"><h3>Underground shopping mall</h3><p>A shopping area beneath Stavanger where residents and visitors can explore the town’s stores.</p></article>
+              <article class="town-landmark"><h3>Residential quarter</h3><p>Plots, paths, and shared spaces where most residents make their home.</p></article>
+            </div>
+          </section>
+          <section class="town-detail-section">
+            <h2>Town gallery</h2>
+            <div class="town-gallery">
+              <figure class="town-image"><div class="town-image-placeholder" role="img" aria-label="A view across Stavanger"><span class="town-image-icon">◇</span><strong>Town image</strong><span>Add a town overview screenshot here.</span></div></figure>
+              <figure class="town-image"><div class="town-image-placeholder" role="img" aria-label="Stavanger cathedral project"><span class="town-image-icon">◇</span><strong>Town image</strong><span>Add a screenshot of the cathedral project here.</span></div></figure>
+            </div>
+          </section>
+        </article>
+
+        <article class="town-detail" data-town="nordic_island" hidden>
+          <p class="town-back"><a href="#towns">← All towns</a></p>
+          <header class="section-header town-detail-header">
+            <p class="kicker">Industrial town</p>
+            <h1 class="section-title">Nordic_island</h1>
+            <p class="section-intro">Nordic_island is an industrial town focused on technologies to gather and refine resources for the realm.</p>
+            <p class="town-meta">Status: Active · Subsidized by the nation fund</p>
+            <div class="town-mayor">
+              <img class="player-head" src="assets/players/theospelarx.png" alt="theospelarx's Minecraft skin" width="52" height="52">
+              <span class="town-mayor-copy"><span>Mayor</span><strong>theospelarx</strong></span>
+            </div>
+          </header>
+          <section class="town-detail-section">
+            <h2>Town map</h2>
+            <div class="map-frame-wrap">
+              <div class="map-header">
+                <span class="map-label">Nordic_island · X -306, Z -13720</span>
+                <a class="map-external" href="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=8&amp;x=-306&amp;z=-13720" target="_blank" rel="noopener noreferrer">Open full map ↗</a>
+              </div>
+              <iframe
+                class="map-frame"
+                title="DiplomaticaMC Nordic_island map"
+                src="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=8&amp;x=-306&amp;z=-13720"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                loading="lazy"
+                allow="fullscreen"
+              ></iframe>
+            </div>
+          </section>
+          <section class="town-detail-section">
+            <h2>What Nordic_island has to offer</h2>
+            <ul class="town-offerings">
+              <li>Industrial builds and resource infrastructure</li>
+              <li>Technologies aimed at gathering and refining resources</li>
+              <li>Support from the nation fund for public industry</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>History and growth</h2>
+            <ul class="town-history">
+              <li>Nordic_island was founded as the Nordic Empire’s industrial town, with its founding recorded on site.</li>
+              <li>The town’s founding and early industry were subsidized by the nation fund.</li>
+              <li><span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span> serves as mayor.</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>Town gallery</h2>
+            <div class="town-gallery">
+              <figure class="town-image">
+                <img src="assets/Nordic_island.png" alt="The founding of Nordic_island" loading="lazy">
+                <figcaption>The founding of Nordic_island</figcaption>
+              </figure>
+            </div>
+          </section>
+        </article>
+
+        <article class="town-detail" data-town="gardsbruk" hidden>
+          <p class="town-back"><a href="#towns">← All towns</a></p>
+          <header class="section-header town-detail-header">
+            <p class="kicker">Agricultural town</p>
+            <h1 class="section-title">Gardsbruk</h1>
+            <p class="section-intro">Gardsbruk is the agricultural town of the Nordic Empire: fields and farm work paired with offices and an apartment building for residents.</p>
+            <p class="town-meta">Status: Active · Funded by Jfizzle9000</p>
+            <div class="town-mayor">
+              <img class="player-head" src="assets/players/zaksmak8113.png" alt="Zaksmak8113's Minecraft skin" width="52" height="52">
+              <span class="town-mayor-copy"><span>Mayor</span><strong>Zaksmak8113</strong></span>
+            </div>
+          </header>
+          <section class="town-detail-section">
+            <h2>Town map</h2>
+            <div class="map-frame-wrap">
+              <div class="map-header">
+                <span class="map-label">Gardsbruk · X 1780, Z -13230</span>
+                <a class="map-external" href="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=6&amp;x=1780&amp;z=-13230" target="_blank" rel="noopener noreferrer">Open full map ↗</a>
+              </div>
+              <iframe
+                class="map-frame"
+                title="DiplomaticaMC Gardsbruk map"
+                src="https://map.diplomaticamc.com/?world=minecraft_overworld&amp;zoom=6&amp;x=1780&amp;z=-13230"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                loading="lazy"
+                allow="fullscreen"
+              ></iframe>
+            </div>
+          </section>
+          <section class="town-detail-section">
+            <h2>What Gardsbruk has to offer</h2>
+            <ul class="town-offerings">
+              <li>Agricultural land and farm infrastructure</li>
+              <li>Town offices for administration and work</li>
+              <li>An apartment building for residents</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>History and growth</h2>
+            <ul class="town-history">
+              <li>Gardsbruk was founded on 3 August 2026 as the Nordic Empire’s agricultural town.</li>
+              <li>The town’s founding was funded by <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span>.</li>
+              <li><span class="player-ref"><img class="player-head" src="assets/players/zaksmak8113.png" alt="" width="22" height="22"><span>Zaksmak8113</span></span> serves as mayor.</li>
+            </ul>
+          </section>
+          <section class="town-detail-section">
+            <h2>Buildings and landmarks</h2>
+            <div class="town-landmarks">
+              <article class="town-landmark"><h3>Farmland</h3><p>The agricultural core of Gardsbruk, where the town grows food for the realm.</p></article>
+              <article class="town-landmark"><h3>Offices</h3><p>Administrative and work spaces serving the town and its farm operations.</p></article>
+              <article class="town-landmark"><h3>Apartment building</h3><p>Residential flats for people living and working in Gardsbruk.</p></article>
+            </div>
+          </section>
+          <section class="town-detail-section">
+            <h2>Town gallery</h2>
+            <div class="town-gallery">
+              <figure class="town-image"><div class="town-image-placeholder" role="img" aria-label="A view of Gardsbruk"><span class="town-image-icon">◇</span><strong>Town image</strong><span>Add a screenshot of Gardsbruk here.</span></div></figure>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+
+    <!-- TIMES -->
+    <section id="times" class="panel panel--times" aria-labelledby="times-title" hidden>
+      <div class="page-wrap page-wrap--paper">
+        <div id="times-index" class="times-index">
+          <header class="paper-masthead">
+            <p class="paper-edition">Vol. I · No. 2 · DiplomaticaMC · Nordic Empire</p>
+            <h1 id="times-title" class="paper-name">The Nordic Times</h1>
+            <p class="paper-tagline">Built together. Bound together. Strong together.</p>
+            <p class="paper-dateline"><time datetime="2026-07-28">Tuesday, 28 July 2026</time> · Heimstad &amp; Stavanger</p>
+          </header>
+
+          <div class="paper-front">
+            <a class="paper-lead" href="#times/constitution-in-force" data-route="times/constitution-in-force">
+              <p class="paper-kicker">Nation</p>
+              <h2>The Nordic Empire is founded</h2>
+              <p class="paper-deck">Four founders raise a realm on DiplomaticaMC. With the Constitution ratified, the Nordic Empire stands as one people under one law.</p>
+              <p class="paper-lead-body">Heimstad is the capital. Stavanger is home. <span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span> reigns as King; <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span>, <span class="player-ref"><img class="player-head" src="assets/players/gisa1327.png" alt="" width="22" height="22"><span>Gisa1327</span></span>, and <span class="player-ref"><img class="player-head" src="assets/players/zaksmak8113.png" alt="" width="22" height="22"><span>Zaksmak8113</span></span> stand with him among the founders. The Constitution settles the form of government, the Protestant faith of the realm, and the Church of the Nordic Empire as Established Church. Built together. Bound together. Strong together.</p>
+              <p class="paper-continue">Continue reading</p>
+            </a>
+
+            <div class="paper-secondary">
+              <a class="paper-story" href="#times/farmco-opens" data-route="times/farmco-opens">
+                <p class="paper-kicker">Commerce</p>
+                <h3>FarmCo opens</h3>
+                <p>The Nordic Empire’s first company is live: state-run sales of the realm’s farm goods.</p>
+              </a>
+              <a class="paper-story" href="#times/heimstad-capital" data-route="times/heimstad-capital">
+                <p class="paper-kicker">Nation</p>
+                <h3>Heimstad named capital</h3>
+                <p><span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span> confirms Heimstad as the capital. Stavanger remains home for most residents.</p>
+              </a>
+              <a class="paper-story" href="#times/stavanger-launch" data-route="times/stavanger-launch">
+                <p class="paper-kicker">Nation</p>
+                <h3>Stavanger opened 1 June</h3>
+                <p>The residential town launched. Join with <code>/t join Stavanger</code>. Mayor: <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span>.</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="paper-rule" aria-hidden="true"></div>
+
+          <div class="paper-below">
+            <a class="paper-column" href="#times/farmco-opens" data-route="times/farmco-opens">
+              <p class="paper-kicker">Market</p>
+              <h3>What FarmCo sells</h3>
+              <p>FarmCo is the selling arm of state farming: food and farm goods moved from field to chest for residents and trade partners.</p>
+            </a>
+            <a class="paper-column" href="#times/nordic-island-founded" data-route="times/nordic-island-founded">
+              <p class="paper-kicker">Towns</p>
+              <h3>Nordic_island rises</h3>
+              <p>An industrial town focused on resource technologies, led by mayor <span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span> and subsidized by the nation fund.</p>
+            </a>
+            <a class="paper-column" href="#times/gardsbruk-founded" data-route="times/gardsbruk-founded">
+              <p class="paper-kicker">Towns</p>
+              <h3>Gardsbruk founded</h3>
+              <p>Founded 3 August 2026. An agricultural town with offices and an apartment building. Mayor: <span class="player-ref"><img class="player-head" src="assets/players/zaksmak8113.png" alt="" width="22" height="22"><span>Zaksmak8113</span></span>. Funded by <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span>.</p>
+            </a>
+          </div>
+
+          <div class="paper-rule" aria-hidden="true"></div>
+
+          <div class="paper-spacer" aria-hidden="true"></div>
+
+          <p class="paper-footer-line">The Nordic Times · Official gazette of the Nordic Empire on DiplomaticaMC</p>
+        </div>
+
+        <article id="times-story-farmco-opens" class="times-story" data-story="farmco-opens" hidden>
+          <p class="times-back"><a href="#times" data-route="times">← Back to The Nordic Times</a></p>
+          <p class="paper-kicker">Commerce · 20 July 2026</p>
+          <h1>FarmCo opens: the Nordic Empire’s first company</h1>
+          <p class="times-byline">By the Nordic Times commercial desk</p>
+          <div class="times-body">
+            <p>STAVANGER. The Nordic Empire has opened its first company. <strong>FarmCo</strong> is state-run and stands as the selling side of the nation’s goods: the shopfront where farm produce meets buyers.</p>
+            <p>FarmCo does not chase private vanity. It moves crops and farm goods from the realm’s fields into market chests at prices set for the common good. Industry at Nordic_island will feed the realm’s resource needs while FarmCo keeps the farm shelves stocked.</p>
+            <p>Residents who farm for the Nordic Empire are feeding one company and one people. Built together. Bound together. Strong together.</p>
+          </div>
+        </article>
+
+        <article id="times-story-stavanger-launch" class="times-story" data-story="stavanger-launch" hidden>
+          <p class="times-back"><a href="#times" data-route="times">← Back to The Nordic Times</a></p>
+          <p class="paper-kicker">Nation · 1 June 2026</p>
+          <h1>Stavanger opens its gates</h1>
+          <p class="times-byline">By the Nordic Times editorial desk</p>
+          <div class="times-body">
+            <p>STAVANGER. On 1 June 2026 the Nordic Empire opened its residential town. Stavanger is the place to live: plots, neighbours, and a clear path in for anyone who joins DiplomaticaMC.</p>
+            <p>Residents connect with IP <code>diplomaticamc.com</code>, then run <code>/t join Stavanger</code> in chat. No application is required. Heimstad stands as the capital; Stavanger is home.</p>
+            <p>Co-leader <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span> serves as mayor of Stavanger. Since opening day, the town has grown beyond 300 claimed chunks and added an underground shopping mall for residents and visitors.</p>
+          </div>
+        </article>
+
+        <article id="times-story-heimstad-capital" class="times-story" data-story="heimstad-capital" hidden>
+          <p class="times-back"><a href="#times" data-route="times">← Back to The Nordic Times</a></p>
+          <p class="paper-kicker">Nation · 21 June 2026</p>
+          <h1>Heimstad named capital of the Nordic Empire</h1>
+          <p class="times-byline">By the Nordic Times editorial desk</p>
+          <div class="times-body">
+            <p>HEIMSTAD. <span class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></span> and fellow residents confirm Heimstad as the capital of the Nordic Empire on DiplomaticaMC. Stavanger remains the main residential town, open since 1 June.</p>
+            <p>The map also holds <strong>Nordic_island</strong>, an industrial town focused on technologies to gather resources, led by mayor <span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span> and subsidized by the nation fund. Diplomacy with border towns will follow as the map allows.</p>
+          </div>
+        </article>
+
+        <article id="times-story-constitution-in-force" class="times-story" data-story="constitution-in-force" hidden>
+          <p class="times-back"><a href="#times" data-route="times">← Back to The Nordic Times</a></p>
+          <p class="paper-kicker">Nation · 28 July 2026</p>
+          <h1>The Nordic Empire is founded</h1>
+          <p class="times-byline">By the Nordic Times editorial desk</p>
+          <div class="times-body">
+            <p>HEIMSTAD. The nation of the Nordic Empire has been founded on DiplomaticaMC. Four founders raised the realm: <strong class="player-ref"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></strong>, King of the Nordic Empire; <strong class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></strong>, co-leader and mayor of Stavanger; and fellow founders <strong class="player-ref"><img class="player-head" src="assets/players/gisa1327.png" alt="" width="22" height="22"><span>Gisa1327</span></strong> and <strong class="player-ref"><img class="player-head" src="assets/players/zaksmak8113.png" alt="" width="22" height="22"><span>Zaksmak8113</span></strong>.</p>
+            <p>With the Constitution ratified on this day, the Nordic Empire stands under one supreme law: a limited monarchy, Protestant faith of the King, and the Church of the Nordic Empire as the sole Established Church. Protestantism is the religion of the realm. Heimstad is the capital; Stavanger is home for most residents.</p>
+            <p>The early work turns inward: raise the towns, steady the state, and bind residents to one another before the map pulls the gaze outward. Residents may read the full text on the <a href="#constitution" data-tab="constitution">Constitution</a> page.</p>
+            <p>Built together. Bound together. Strong together.</p>
+          </div>
+        </article>
+
+        <article id="times-story-nordic-island-founded" class="times-story" data-story="nordic-island-founded" hidden>
+          <p class="times-back"><a href="#times" data-route="times">← Back to The Nordic Times</a></p>
+          <p class="paper-kicker">Towns · 3 August 2026</p>
+          <h1>Nordic_island rises</h1>
+          <p class="times-byline">By the Nordic Times industrial desk</p>
+          <div class="times-body">
+            <p>NORDIC EMPIRE. <strong>Nordic_island</strong> stands as the Nordic Empire’s industrial town: built around technologies to gather and refine resources for the realm.</p>
+            <p>Mayor <span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span> leads the town. Its founding and early industry were subsidized by the nation fund, so the island’s workshops serve the people as a whole.</p>
+            <p>Residents can read more on the <a href="#towns/nordic_island">Towns</a> page, including a picture of the founding of the town.</p>
+          </div>
+        </article>
+
+        <article id="times-story-gardsbruk-founded" class="times-story" data-story="gardsbruk-founded" hidden>
+          <p class="times-back"><a href="#times" data-route="times">← Back to The Nordic Times</a></p>
+          <p class="paper-kicker">Towns · 3 August 2026</p>
+          <h1>Gardsbruk founded</h1>
+          <p class="times-byline">By the Nordic Times farm desk</p>
+          <div class="times-body">
+            <p>NORDIC EMPIRE. On 3 August 2026, <strong>Gardsbruk</strong> joined the map as the realm’s agricultural town: farmland paired with offices and an apartment building.</p>
+            <p>Mayor <span class="player-ref"><img class="player-head" src="assets/players/zaksmak8113.png" alt="" width="22" height="22"><span>Zaksmak8113</span></span> leads the town. Its founding was funded by <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span>.</p>
+            <p>Read more on the <a href="#towns/gardsbruk">Towns</a> page.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- JOIN -->
+    <section id="join" class="panel" aria-labelledby="join-title" hidden>
+      <div class="page-wrap page-wrap--narrow">
+        <header class="section-header">
+          <p class="kicker">Become a resident</p>
+          <h1 id="join-title" class="section-title">Join the Nordic Empire</h1>
+          <p class="section-intro">Stavanger is open for residents. No application needed.</p>
+        </header>
+
+        <div class="join-ip-row">
+          <p class="join-ip-label">Server IP</p>
+          <div class="join-ip-box">
+            <code>diplomaticamc.com</code>
+            <button type="button" class="btn btn-outline btn-copy" data-copy="diplomaticamc.com" aria-label="Copy server IP">Copy</button>
+          </div>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <strong>Connect to the server</strong>
+            <span>Join <a href="https://diplomaticamc.com/" target="_blank" rel="noopener noreferrer">DiplomaticaMC</a> in Minecraft Multiplayer using IP <code>diplomaticamc.com</code>.</span>
+          </li>
+          <li>
+            <strong>Join Stavanger</strong>
+            <span>In chat, run <code>/t join Stavanger</code>.</span>
+          </li>
+          <li>
+            <strong>Get a plot</strong>
+            <span>Settle in, claim a place to live, and make yourself at home.</span>
+          </li>
+          <li>
+            <strong>Meet neighbours</strong>
+            <span>Say hello on public paths and around town. That is all you need to get started.</span>
+          </li>
+        </ol>
+
+        <p><a href="#home" class="btn btn-primary" data-tab="home">Back to home</a></p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="panel" aria-labelledby="faq-title" hidden>
+      <div class="page-wrap page-wrap--narrow">
+        <header class="section-header">
+          <p class="kicker">Common questions</p>
+          <h1 id="faq-title" class="section-title">FAQ</h1>
+        </header>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>How do I join the Nordic Empire?</summary>
+            <p>Connect to <a href="https://diplomaticamc.com/" target="_blank" rel="noopener noreferrer">DiplomaticaMC</a> (IP <code>diplomaticamc.com</code>), then run <code>/t join Stavanger</code>. No application needed. Heimstad is the capital; Stavanger is where residents live.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Where is the Constitution?</summary>
+            <p>On the <a href="#constitution" data-tab="constitution">Constitution</a> page: the law of the realm, including the Protestant faith of the King and the Church of the Nordic Empire as the only Established Church.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What religion does the Nordic Empire follow?</summary>
+            <p>The Nordic Empire is a Protestant nation only. The King professes the Protestant religion. The Church of the Nordic Empire, a Protestant church, is the Established Church. Other religions are not permitted in the nation.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Where is the capital?</summary>
+            <p><strong>Heimstad</strong> is the capital. <strong>Stavanger</strong> is the main residential town. See <a href="#towns" data-tab="towns">Towns</a> and the map on <a href="#home" data-tab="home">Home</a>.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What other towns are there?</summary>
+            <p>Beyond Heimstad and Stavanger, <strong>Nordic_island</strong> is the industrial town focused on technologies to gather resources (mayor: <span class="player-ref"><img class="player-head" src="assets/players/theospelarx.png" alt="" width="22" height="22"><span>theospelarx</span></span>), and <strong>Gardsbruk</strong> is the agricultural town with offices and an apartment building (mayor: <span class="player-ref"><img class="player-head" src="assets/players/zaksmak8113.png" alt="" width="22" height="22"><span>Zaksmak8113</span></span>, funded by <span class="player-ref"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></span>). See <a href="#towns" data-tab="towns">Towns</a>.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Who leads the Nordic Empire?</summary>
+            <p><a class="player-ref" href="#about" data-tab="about"><img class="player-head" src="assets/players/thegoldencowz.png" alt="" width="22" height="22"><span>TheGoldenCowZ</span></a> leads the Nordic Empire with <a class="player-ref" href="#about" data-tab="about"><img class="player-head" src="assets/players/jfizzle9000.png" alt="" width="22" height="22"><span>Jfizzle9000</span></a> as co-leader and mayor of Stavanger.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Who founded the Nordic Empire?</summary>
+            <p>See the <a href="#history" data-tab="history">History</a> page for the founders and early nation record.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-nation">Nordic Empire · DiplomaticaMC</p>
+        <p class="footer-motto">Built together. Bound together. Strong together.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Site">
+        <a href="#home" data-tab="home">Home</a>
+        <a href="#about" data-tab="about">About</a>
+        <a href="#history" data-tab="history">History</a>
+        <a href="#constitution" data-tab="constitution">Constitution</a>
+        <a href="#towns" data-tab="towns">Towns</a>
+        <a href="#times" data-tab="times">Times</a>
+        <a href="#join" data-tab="join">Join</a>
+        <a href="#faq" data-tab="faq">FAQ</a>
+      </nav>
+      <p class="footer-copy muted">© <span id="year"></span> Nordic Empire · DiplomaticaMC</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
